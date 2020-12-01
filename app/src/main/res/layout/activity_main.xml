@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:weightSum="3"
+        >
+
+
+        <TextView
+            android:id="@+id/total_all_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/shape2"
+            android:textSize="18sp"
+            android:layout_marginRight="4dp"
+            android:text="99999"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:layout_marginRight="12dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/shape3"
+            android:text="الأجمالـــي"
+            android:textSize="18sp"
+            android:textColor="@color/cardview_light_background"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/addCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:background="@drawable/shape4"
+            android:text="اضافـــــــــــــــــة  + "
+            android:textColor="@color/cardview_light_background"
+            android:textAlignment="center"
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="6"
+        app:layout_constraintTop_toBottomOf="@+id/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.85">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="5"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="7dp"
+                android:text="التاريخ التسجيل"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#DF020202"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:background="@drawable/frame1"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="center"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="7dp"
+                android:text="اجمالي السعر"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#DF020202"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:background="@drawable/frame1"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="center"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="serif-monospace"
+                android:padding="7dp"
+                android:layout_weight="1"
+                android:text="سعر القطعه"
+                android:gravity="center"
+                android:textColor="#DF020202"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:background="@drawable/frame1"
+                android:layout_marginEnd="10dp"
+                android:textAlignment="center"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif-monospace"
+                    android:padding="7dp"
+                    android:text="العدد"
+                    android:layout_weight="1"
+                    android:textColor="#DF020202"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/frame1"
+                    android:textAlignment="center"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp"
+                    android:weightSum="2"
+                    >
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:padding="7dp"
+                        android:layout_weight="1"
+                        android:text="الدسته"
+                        android:textColor="#DF020202"
+                        android:textSize="6sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/frame1"
+                        android:textAlignment="center"></TextView>
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif-monospace"
+                        android:padding="7dp"
+                        android:layout_weight="1"
+                        android:text="القطع"
+                        android:layout_marginLeft="4dp"
+                        android:textColor="#DF020202"
+                        android:textSize="7sp"
+                        android:textStyle="bold"
+                        android:background="@drawable/frame1"
+                        android:textAlignment="center"></TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="serif-monospace"
+                android:padding="7dp"
+                android:layout_weight=".9"
+                android:text="الاصناف"
+                android:gravity="center"
+                android:textColor="#DF020202"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:background="@drawable/frame1"
+                android:textAlignment="center"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fontFamily="serif-monospace"
+                android:padding="7dp"
+                android:text="م"
+                android:layout_weight="1.1"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:textColor="#DF020202"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:background="@drawable/frame1"
+                android:textAlignment="center"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"/>
+
+</LinearLayout>

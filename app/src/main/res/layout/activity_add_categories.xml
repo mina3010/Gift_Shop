@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.AddCategories"
+    android:background="@drawable/frame1"
+    android:layout_margin="4dp"
+    android:padding="8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="right"
+                android:textSize="22sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="اسم الصنف"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:hint="ادخل اسم الصنف"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/frame1"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="28dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="right"
+                android:textSize="22sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="عدد القطع" />
+            <EditText
+                android:id="@+id/input_unit"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:hint="ادخل عدد القطع"
+                android:layout_margin="4dp"
+                android:layout_marginTop="72dp"
+                android:background="@drawable/frame1"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="28dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="right"
+                android:textSize="24sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="دستة"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/input_group"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:layout_marginTop="72dp"
+                android:hint="ادخل عدد الدست"
+                android:background="@drawable/frame1"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="28dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="right"
+                android:textSize="22sp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="سعر القطعه"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <EditText
+                android:id="@+id/input_unitPrice"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:hint="ادخل سعر القطعه الواحدة"
+                android:layout_marginTop="72dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:background="@drawable/frame1"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="28dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_group"
+                app:layout_constraintVertical_bias="0.221" />
+
+            <Button
+                android:id="@+id/btn_addNewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/shape1"
+                android:text="أضافه"
+                android:textSize="28sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input_totalPrice" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
